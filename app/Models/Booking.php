@@ -12,4 +12,5 @@ class Booking extends Model
     function Restaurant(): BelongsTo {
         return $this->belongsTo(Restaurant::class);
     }
+    protected $fillable = ['name', 'email', 'datetime', 'people', 'restaurant_id'];
 }
